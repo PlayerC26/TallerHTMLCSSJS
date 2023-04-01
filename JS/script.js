@@ -41,6 +41,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#calNotBtn").click(function () {
         var nombre = $("#inputTxT4").val();
+        //toma los valores y los cambia para tipo float
         var nota1 = parseFloat($("#inputTxT42").val());
         var nota2 = parseFloat($("#inputTxT43").val());
         var nota3 = parseFloat($("#inputTxT44").val());
@@ -79,12 +80,44 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function() {
-    $("#textSearch").click(function() {
-        var parrafo = $("#inputTextArea").val();
-        var texto = $("#inputSearchTextArea").val();
-        var regex = new RegExp(texto, "gi");
-        var resaltado = parrafo.replace(regex, "<span class='resaltado'>$&</span>");
+$(document).ready(function () {
+    $("#textSearch").click(function () {
+        var parrafo = $("#inputTextArea").val();//toma el valor del text area del parrafo   
+        var texto = $("#inputSearchTextArea").val();//toma el valor para hacer la busqueda dentro del texto
+        var regex = new RegExp(texto, "gi"); //se utilizapara coincidir texto con un patron
+        var resaltado = parrafo.replace(regex, "<span class='resaltado'>$&</span>"); //se cambia solo la coincidencia dentro de un span
         $("#resBusqueda").html(resaltado);
+    });
+});
+
+$(document).ready(function () {
+    $("#divBtn").click(function () {
+        var a = parseInt($("#inputTxT7").val());
+        var b = parseInt($("#inputTxT71").val());
+        if (a < 0 || b < 0) {
+            $("#txtArea7").html("Los números ingresados solo deben ser enteros positivos");
+        } else if (a % b == 0) {
+            $("#txtArea7").html("El número " + a + " es divisible entre el número " + b);
+        } else {
+            $("#txtArea7").html("El número " + a + " no es divisible entre el número " + b);
+        }
+    });
+});
+
+$(document).ready(function () {
+    $("#parImpBtn2").click(function () {
+        var numeros = $("#inputTxT8").val().split(",");
+        var resultado = "";
+        for (var i = 0; i < numeros.length; i++) {
+            var numero = parseFloat(numeros[i]);
+            if (isNaN(numero) || numero < 0 || numero % 1 != 0) {
+                resultado += numeros[i] + " no es un número entero válido<br>";
+            } else if (numero % 2 == 0) {
+                resultado += numeros[i] + " es número par<br>";
+            } else {
+                resultado += numeros[i] + " es número impar<br>";
+            }
+        }
+        $("#txtArea8").html(resultado);
     });
 });
