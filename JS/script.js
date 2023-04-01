@@ -21,3 +21,19 @@ $(document).ready(function() {
       $("#txtArea2").val(mensaje);
     });
   });
+
+  $(document).ready(function() {
+    $("#calEdadBtn").click(function() {
+      var nombre = $("#inputTxT3").val();
+      var edad = $("#inputTxT32").val();
+      var mensaje = "";
+      
+      if (edad>17) { // verifica que sea mayor a 17 para saber si es mayor de edad
+        mensaje = "es mayo de edad";
+      } else { // si no, es menor de edad
+        mensaje = "es menor de edad";
+      }
+      
+      $("#txtArea3").val(nombre + " " + mensaje);
+    });
+  });
