@@ -73,9 +73,19 @@
         border-radius: 25px;
     }
 
+    .cuadro5{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(216, 153, 153);
+        border-radius: 25px;
+    }
+
+
     button{
 
-        margin-left: 10px;
+        margin: 10px;
     }
 
     textarea{

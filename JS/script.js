@@ -58,3 +58,22 @@ $(document).ready(function() {
       $("#txtArea4").val(mensaje);
     });
   });
+
+  $(document).ready(function() {
+    $("#parImpBtn").click(function() {
+        var numero = $("#inputTxT5").val();
+        if (numero == "") { //Verifica el campo vacio
+            $("#txtArea5").val("Por favor, ingrese un número.");
+        } else if (isNaN(numero)) {
+            $("#txtArea5").val("El valor ingresado no es un número válido, por favor ingrese un número entero positivo");
+        } else if (numero < 0) {
+            $("#txtArea5").val("El número debe ser positivo.");
+        } else if (numero % 1 != 0) {
+            $("#txtArea5").val("El número no puede ser decimal, por favor ingrese un número entero positivo");
+        } else if (numero % 2 == 0) {
+            $("#txtArea5").val("El número es par.");
+        } else {
+            $("#txtArea5").val("El número es impar.");
+        }
+    });
+});
