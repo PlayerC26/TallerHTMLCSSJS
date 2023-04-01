@@ -29,20 +29,28 @@
         </nav>
         <section class="contenido">
 
-            <section class="cuadro5">
+            <section class="cuadro6">
 
-                <p>Aplicación que permite identificar los números pares e impares, solo tienen que ser positivos
-                    enteros.</p>
-                <form action="caracteres" class="inputs4">
-                    <label for="inputTxT5">Número</label>
-                    <input type="text" id="inputTxT5" placeholder="Ingrese el número" required><br>
-                    <button id="parImpBtn" type="button">Calcular</button><br>
+                <p>Aplicación que permite identificar las coincidencias de la cadena de texto con el parrafo ingresado
+                </p>
+                <form action="caracteres" class="inputs5">
+                    <section class="parrafos">
+                        <label for="inputTextArea">Parrafo</label><br>
+                        <textarea name="parrafo" id="inputTextArea" cols="30" rows="5"></textarea>
+                        <label for="inputSearchTextArea">Búsqueda</label><br>
+                        <textarea name="parrafo" id="inputSearchTextArea" cols="30" rows="5"></textarea>
+                    </section>
+                    <section class="btnBusqueda">
+
+                        <button id="textSearch" type="button">Buscar</button>
+                       <p id="resBusqueda"></p>
+                       <!-- <textarea name="resBusqueda" id="resBusqueda" cols="60" rows="5"></textarea>-->
+
+                    </section>
+                    
 
                 </form>
                 <br>
-                <textarea id="txtArea5" name="respuesta" id="res" cols="40" rows="5" placeholder="Respuesta..."
-                    readonly></textarea>
-
 
             </section>
 
