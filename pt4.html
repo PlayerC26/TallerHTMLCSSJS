@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Taller HTML CSS JS</title>
+</head>
+
+<body>
+    <section class="page">
+
+        <header class="Cabecera">
+            <h1>Taller de HTML, CSS y JS</h1>
+        </header>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html" class="menu">Punto 1</a></li>
+                <li><a href="pt2.html" class="menu">Punto 2</a></li>
+                <li><a href="pt3.html" class="menu">Punto 3</a></li>
+                <li><a href="pt4.html" class="menu">Punto 4</a></li>
+                <li><a href="pt5.html" class="menu">Punto 5</a></li>
+                <li><a href="pt6.html" class="menu">Punto 6</a></li>
+                <li><a href="pt7.html" class="menu">Punto 7</a></li>
+                <li><a href="pt8.html" class="menu">Punto 8</a></li>
+            </ul>
+        </nav>
+        <section class="contenido">
+
+            <section class="cuadro4">
+
+                <p>Aplicación que permite identificar si un estudiante pasa la nota o no</p>
+                <form action="caracteres" class="inputs4">
+                    <label for="inputTxT4" >Nombre</label>
+                    <input type="text" id="inputTxT4" placeholder="Camilo..." required><br>
+                    <p>Por favor ingresar las tres notas y generar el cálculo</p>
+                    <label for="inputTxT42">Nota 1 </label>
+                    <input type="number" id="inputTxT42" step='0.01' value='0.00' placeholder='0.00' min="0.00" max="5.0"><br>
+                    <label for="inputTxT43">Nota 2 </label>
+                    <input type="number" id="inputTxT43" step='0.01' value='0.00' placeholder='0.00' min="0.00" max="5.0"><button id="calNotBtn" type="button">Calcular</button><br>
+                    <label for="inputTxT44">Nota 3 </label>
+                    <input type="number" id="inputTxT44" step='0.01' value='0.00' placeholder='0.00' min="0.00" max="5.0"><br><br>
+                    
+                </form>
+                <br>
+                <textarea id="txtArea4" name="respuesta" id="res" cols="40" rows="5" placeholder="Respuesta..."
+                    readonly></textarea>
+
+
+            </section>
+
+
+
+
+        </section>
+
+
+        <footer class="footer">
+
+            <h2>Camilo Garzon</h2>
+
+        </footer>
+
+
+    </section>
+
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>

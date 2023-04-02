@@ -1,0 +1,191 @@
+
+
+    .page{
+        display: grid;
+        grid-template-areas: "cabecera"
+        "navg"
+        "contenido"
+        "piePag";
+        grid-template-rows: 150px 60px calc(100vh - 310px) 100px ;
+    }
+
+    .page header{
+        grid-area: cabecera;
+        display: flex;
+        align-items: center;   
+        justify-content: center; 
+    }
+
+    ul{
+        align-items: center;
+    }
+    
+    li {
+        display: inline;
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+
+    p{
+        padding: 15px;
+    }
+    
+    .inputs{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    
+    .cuadro{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: antiquewhite;
+        border-radius: 25px;
+        
+    }
+    .cuadro2{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(249, 218, 178);
+        border-radius: 25px;
+        
+    }
+    .cuadro3{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(129, 129, 129);
+        border-radius: 25px;
+        
+    }
+    .cuadro4{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(184, 183, 183);
+        border-radius: 25px;
+    }
+
+    .cuadro5{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(216, 153, 153);
+        border-radius: 25px;
+    }
+    .cuadro6{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(205, 205, 205);
+        border-radius: 25px;
+    }
+    .cuadro7{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(255, 193, 193);
+        border-radius: 25px;
+    }
+    .cuadro8{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        background-color: rgb(255, 212, 212);
+        border-radius: 25px;
+    }
+
+    .parrafos{
+        
+        display: flex;
+        align-items: center;   
+        justify-content: center;
+    
+    }
+
+
+    button{
+        background-color: white;
+        color: black;
+        border: 2px solid #060606;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition-duration: 0.4s;
+    }
+
+    button:hover{
+
+        background-color: #5d5d5d;
+        color: white;
+    
+    }
+
+    textarea{
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    
+    input{
+        
+        border-radius: 8px;
+
+    }
+
+    label{
+        
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .btnBusqueda{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        justify-content: center; 
+    
+    }
+
+    .resaltado {
+        color: red;
+        font-weight: bold;
+    }
+
+    .menu{
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .page nav{
+        grid-area: navg;
+        background-color: black;      
+    }
+    .page section{
+        grid-area: contenido;    
+        display: flex;
+        align-items: center;   
+        justify-content: center; 
+        padding-top: 1vh;
+    }
+
+    .page footer{
+        grid-area: piePag;
+        display: flex;
+        align-items: center;   
+        justify-content: center; 
+    }
