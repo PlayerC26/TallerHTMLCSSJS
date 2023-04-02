@@ -116,13 +116,31 @@
 
 
     button{
-
+        background-color: white;
+        color: black;
+        border: 2px solid #060606;
         margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        transition-duration: 0.4s;
+    }
+
+    button:hover{
+
+        background-color: #5d5d5d;
+        color: white;
+    
     }
 
     textarea{
-        
+        border-radius: 8px;
         margin-bottom: 15px;
+    }
+    
+    input{
+        
+        border-radius: 8px;
+
     }
 
     label{
